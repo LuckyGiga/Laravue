@@ -1,6 +1,13 @@
 # Exploring and practicing Laravel.
-In this project I want to practice a bit and achieve following results:  
-- [x] 
+In this project I want to practice a bit and achieve following results:  
+1. - [x] Compiling into Laravel Blade engine an HTML+Bootstrap design template ([New UI from CreativTim](http://demos.creative-tim.com/now-ui-kit/index.html)) and make it work.
+        - [ ] compile the CSS resources using Laravel Mix
+        - [ ] compile JS resources using Laravel Mix 
+2. - [ ] Follow instructions from [Traversy Media](https://youtu.be/4pc6cgisbKE) to make a simple laravel resource working.
+3. - [ ] Follow instructions about [Full Stack Vue.js & Laravel](https://youtu.be/DJ6PD_jBtU0) and make it work the same way 
+        - [ ] do a bit more, bring some Vue Modals, etc...
+4. - [ ] import FullCalendar wrapped in VUE and learn how to use it.
+
 
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
