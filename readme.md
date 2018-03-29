@@ -1,5 +1,6 @@
-
-
+# Exploring and practicing Laravel.
+In this project I want to practice a bit and achieve following results:  
+- [x] 
 
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
