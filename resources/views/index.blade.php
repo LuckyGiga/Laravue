@@ -5,7 +5,10 @@
         <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
         <link rel="icon" type="image/png" href="../assets/img/favicon.png">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>Landing Page - Now Ui Kit by Creative Tim</title>
+        {{-- THESE ARE 2 IMPORTNT TO GET CSRF TOKEN ERROR SOLVED! --}}
+            <meta name="csrf-token" content="{{ csrf_token()}}">
+            <script>window.Laravel = { csrfToken: '{{ csrf_token()}}'}</script>
+        <title>Laravue application - laravel exploring with LuckyGiga</title>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
         <!--     Fonts and icons     -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
@@ -33,10 +36,10 @@
         </div>  --}}
         {{--  now ui  --}}
         <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="350">
         <div class="container">
             <div class="dropdown button-dropdown">
-                <a href="#pablo" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+                <a href="#" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
                     <span class="button-bar"></span>
                     <span class="button-bar"></span>
                     <span class="button-bar"></span>
@@ -68,8 +71,8 @@
                             @auth
                                 <a href="{{ url('/home') }}">Home</a>
                             @else
-                                <li><a href="{{ route('login') }}" class="nav-link">Login</a></li>
-                                <li><a href="{{ route('register') }}" class="nav-link">Register</a></li>
+                                <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">Login</a></li>
+                                <li class="nav-item"><a href="{{ route('register') }}" class="nav-link">Register</a></li>
                             @endauth
                     @endif
                     <li class="nav-item">
@@ -122,7 +125,17 @@
                 </div>
             </div>
         </div>
+        {{-- KL HERE INSERTING THE VUE --}}
+        <div id="app" class="section section-about-us">
+            <div class="container">
+                <articles></articles>
+            </div>
+        </div>
+
         <div class="section section-about-us">
+        {{-- inserting those 2 for test --}}
+        <div class="container">
+            {{-- ends of insert --}}
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto text-center">
@@ -300,6 +313,7 @@
                 }
             }
         </script>
+        <script src="{{ asset('js/app.js')}}"></script>
 
 
 </html>
