@@ -41,6 +41,13 @@
                     <a class="dropdown-item" href="#">One more separated link</a>
                 </div>
             </div>
+            <!DOCTYPE html>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
             <div class="navbar-translate">
                 <a class="navbar-brand" href="/" rel="tooltip" title="Adapted & coded by LuckyGiga.com" data-placement="bottom">
                     Laravue
@@ -150,8 +157,10 @@
 
 
     <!--   Core JS Files   -->
-        <script src="./assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
-        <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        {{-- <script src="./assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+        <script src="./assets/js/core/popper.min.js" type="text/javascript"></script> --}}
         <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
         <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
         <script src="./assets/js/plugins/bootstrap-switch.js"></script>
