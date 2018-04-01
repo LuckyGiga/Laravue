@@ -64261,6 +64261,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -64367,6 +64368,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.edit = false;
             this.$refs.refModalAdd.hide();
         },
+        newArticleForm: function newArticleForm() {
+            this.edit = false;
+            this.article.id = '';
+            this.article.artilce_id = '';
+            this.article.title = '';
+            this.article.body = '';
+            this.$refs.refModalAdd.show();
+        },
         editArticle: function editArticle(article) {
             this.edit = true;
             this.article.id = article.id;
@@ -64390,21 +64399,6 @@ var render = function() {
     "div",
     [
       _c("h2", [_vm._v("Articles")]),
-      _vm._v(" "),
-      _c(
-        "b-btn",
-        {
-          directives: [
-            {
-              name: "b-modal",
-              rawName: "v-b-modal.modalAdd",
-              modifiers: { modalAdd: true }
-            }
-          ],
-          staticClass: "btn btn-primary btn-round"
-        },
-        [_vm._v("Add Article")]
-      ),
       _vm._v(" "),
       _c(
         "b-modal",
@@ -64490,69 +64484,78 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c("nav", { attrs: { "aria-label": "Page navigation example" } }, [
-        _c("ul", { staticClass: "pagination justify-content-end" }, [
-          _c(
-            "li",
-            {
-              staticClass: "page-item",
-              class: [{ disabled: !_vm.pagination.prev_page_url }]
-            },
-            [
-              _c(
-                "a",
-                {
-                  staticClass: "page-link",
-                  attrs: { href: "#!" },
-                  on: {
-                    click: function($event) {
-                      _vm.fetchArticles(_vm.pagination.prev_page_url)
-                    }
-                  }
-                },
-                [_vm._v("Previous")]
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c("li", { staticClass: "page-item disabled" }, [
+      _c("nav", { attrs: { "aria-label": "Page navigation example" } }),
+      _vm._v(" "),
+      _c(
+        "b-btn",
+        {
+          staticClass: "btn btn-primary btn-round",
+          on: { click: _vm.newArticleForm }
+        },
+        [_vm._v("Add Article")]
+      ),
+      _vm._v(" "),
+      _c("ul", { staticClass: "pagination justify-content-end" }, [
+        _c(
+          "li",
+          {
+            staticClass: "page-item",
+            class: [{ disabled: !_vm.pagination.prev_page_url }]
+          },
+          [
             _c(
               "a",
-              { staticClass: "page-link text-dark", attrs: { href: "#!" } },
-              [
-                _vm._v(
-                  "Page " +
-                    _vm._s(_vm.pagination.current_page) +
-                    " of " +
-                    _vm._s(_vm.pagination.last_page)
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c(
-            "li",
-            {
-              staticClass: "page-item",
-              class: [{ disabled: !_vm.pagination.next_page_url }]
-            },
-            [
-              _c(
-                "a",
-                {
-                  staticClass: "page-link",
-                  attrs: { href: "#!" },
-                  on: {
-                    click: function($event) {
-                      _vm.fetchArticles(_vm.pagination.next_page_url)
-                    }
+              {
+                staticClass: "page-link",
+                attrs: { href: "#!" },
+                on: {
+                  click: function($event) {
+                    _vm.fetchArticles(_vm.pagination.prev_page_url)
                   }
-                },
-                [_vm._v("Next")]
+                }
+              },
+              [_vm._v("Previous")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("li", { staticClass: "page-item disabled" }, [
+          _c(
+            "a",
+            { staticClass: "page-link text-dark", attrs: { href: "#!" } },
+            [
+              _vm._v(
+                "Page " +
+                  _vm._s(_vm.pagination.current_page) +
+                  " of " +
+                  _vm._s(_vm.pagination.last_page)
               )
             ]
           )
-        ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "li",
+          {
+            staticClass: "page-item",
+            class: [{ disabled: !_vm.pagination.next_page_url }]
+          },
+          [
+            _c(
+              "a",
+              {
+                staticClass: "page-link",
+                attrs: { href: "#!" },
+                on: {
+                  click: function($event) {
+                    _vm.fetchArticles(_vm.pagination.next_page_url)
+                  }
+                }
+              },
+              [_vm._v("Next")]
+            )
+          ]
+        )
       ]),
       _vm._v(" "),
       _c(

@@ -4,9 +4,16 @@ In this project I want to practice a bit and achieve following results:  
         - [ ] compile the CSS resources using Laravel Mix
         - [ ] compile JS resources using Laravel Mix 
 2. - [x] Follow instructions from [Traversy Media](https://youtu.be/4pc6cgisbKE) to make a simple laravel resource working.
-3. - [ ] Follow instructions about [Full Stack Vue.js & Laravel](https://youtu.be/DJ6PD_jBtU0) and make it work the same way 
-        - [ ] do a bit more, bring some Vue Modals, etc...
+3. - [x] Follow instructions about [Full Stack Vue.js & Laravel](https://youtu.be/DJ6PD_jBtU0) and make it work the same way 
+        - [x] do a bit more, bring some Vue Modals, etc...
+        - [x] bring Bootstrap-Vue component and use it for modal
+        - [x] make everything look nice, in cards and controlled via nice modal
 4. - [ ] import FullCalendar wrapped in VUE and learn how to use it.
+5. - [ ] Add image to Github
+6. - [ ] Publish to VPS
+7. - [ ] Summarize hints and conclusions
+
+
 
 
 

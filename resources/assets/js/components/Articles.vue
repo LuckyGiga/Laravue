@@ -2,8 +2,6 @@
   <div>
     <h2>Articles</h2>
     <!-- modal to add article -->
-        <!-- button to launch modal -->
-        <b-btn v-b-modal.modalAdd class="btn btn-primary btn-round">Add Article</b-btn>
         <!-- modal mini up -->
         <b-modal id="modalAdd" hide-footer hide-header ref="refModalAdd">
             <div class="modal-header justify-content-center">
@@ -22,7 +20,10 @@
         </b-modal>
         <!-- modal mini up -->
     <!-- form to add article -->
-    <nav aria-label="Page navigation example">
+    <nav aria-label="Page navigation example"></nav>
+        <!-- button to launch modal -->
+        <b-btn @click="newArticleForm" class="btn btn-primary btn-round">Add Article</b-btn>
+        <!-- page links -->
         <ul class="pagination justify-content-end">
             <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item">
             <a class="page-link" href="#!"
@@ -151,6 +152,14 @@
             hideAddArticle() {
                 this.edit = false;
                 this.$refs.refModalAdd.hide();
+            },
+            newArticleForm() {
+                this.edit = false;
+                this.article.id = '';
+                this.article.artilce_id = '';
+                this.article.title = '';
+                this.article.body = '';
+                this.$refs.refModalAdd.show();
             },
             editArticle(article) {
                 this.edit = true;
