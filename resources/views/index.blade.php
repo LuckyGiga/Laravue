@@ -3,8 +3,12 @@
 
 @section('content')
         {{-- KL HERE INSERTING THE VUE --}}
+
+
+
         <div id="app" class="section section-about-us">
             <div class="container">
+                    <p class="text-danger"> Below article CRUD components are built with vue. Manipulating them is lightning fast without reloading the page. Uses api calls and reads/writs to database.</p>
                 <articles></articles>
             </div>
         </div>
