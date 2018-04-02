@@ -13,8 +13,10 @@ In this project I want to practice a bit and achieve following results:  
 6. - [ ] Publish to VPS
 7. - [ ] Summarize hints and conclusions
 
-
-
+### this is how it looks 
+![alt text](https://github.com/LuckyGiga/Laravue/blob/master/scr1.jpg)
+### this is how article gets added
+![alt text](https://github.com/LuckyGiga/Laravue/blob/master/scr2.jpg)
 
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
