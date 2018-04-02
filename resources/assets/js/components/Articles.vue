@@ -20,7 +20,7 @@
         </b-modal>
         <!-- modal mini up -->
     <!-- form to add article -->
-    <nav aria-label="Page navigation example"></nav>
+    <nav aria-label="Page navigation example">
         <!-- button to launch modal -->
         <b-btn @click="newArticleForm" class="btn btn-primary btn-round">Add Article</b-btn>
         <!-- page links -->
