@@ -9,8 +9,8 @@ In this project I want to practice a bit and achieve following results:  
         - [x] bring Bootstrap-Vue component and use it for modal
         - [x] make everything look nice, in cards and controlled via nice modal
 4. - [ ] import FullCalendar wrapped in VUE and learn how to use it.
-5. - [ ] Add image to Github
-6. - [ ] Publish to VPS
+5. - [x] Add image to Github
+6. - [x] Publish to VPS
 7. - [ ] Summarize hints and conclusions
 
 ### this is how it looks 
